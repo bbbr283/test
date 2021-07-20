@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Altura home</title>
+	
+	<style>
+		*{
+	padding: 0;
+
+	margin: 0;
+
+	box-sizing: border-box;/*物件總寬設定 配合width呈現 不受 padding與 margin改變總寬*/
+
+	font-family: 'Noto Sans TC', sans-serif;
+		}
+		
+      /*---------區塊1-------------		*/
+		
+		#all{
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+            text-align: center;				
+		}
+		#a_1nav, #a_2cate, #a_3hero, #a_4new, #a_56office, #a_7detail {
+
+	line-height: 0;
+
+}
+		.a01_nav{
+			max-width: 1366px;
+			height: 64px;
+			padding: 15px 59px;
+			margin:  0 auto;
+/*			---flex---*/
+			display: flex;
+			flex-direction:row;
+			justify-content: space-between;
+			
+			}
+		.logoicon{
+			margin-left: 12px;
+		}
+	
+      /*---------區塊2-------------		*/
+		.a02_nav{
+			background-color:#FFE0C3;
+			width: 100%;
+			
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			align-items: center;
+			height: 92px;
+
+			
+		}
+		.a02_nav-item{
+			width: 80px;
+			padding: 10px;
+		    text-emphasis: center;
+		}
+		.img-a02:hover{
+			transform: scale(1.6,1.6);
+		}
+		/*---------區塊3-------------		*/
+		.a03_hero{
+			width: 1366px;
+			background-color:#FFF7F0;
+		}
+		.a03_hero1366{
+			width: 1366px;
+			display: flex;
+			justify-content: center;
+			margin: auto;
+			padding-top: 20px
+		}
+		.a03-imgbox{
+			width: 400px;
+			height: 240px;
+			background-color: #FFE0C3;	
+			margin: 24px;
+			text-align:left;
+			padding-left: 40px;
+			padding-top: 30px;
+/*			background-position: right:0px bottom 20px;*/
+			
+			
+		}
+		
+		
+		
+		.a03-imgbox1{
+			width: 400px;
+			height: 240px;
+			background-color: #FFE0C3;
+			margin: 24px;
+			text-align:left;
+			padding-left: 40px;
+			padding-top: 30px;
+/*			background-position: right:0px bottom 20px;*/
+			background-repeat: no-repeat;
+			
+		}
+		.a03_hero_textbox{
+			width: 400px;
+			height: 160px;
+			border: #FF7B54 2px solid;
+			margin-top: 60px;
+			padding-top: 30px;
+			line-height: 50px;
+			text-align: center;
+		}
+/*		--------區塊4---*/
+/*		--------同時套用4.9－－－－－－*/
+		.a_4new,.a_9new{
+			width: 1366px;
+			margin: 0 auto;
+			
+			
+		}
+		.a_4new_titleItems,.a_9new_titleItems{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;	
+			padding: 20px 60px;
+			align-items: center;
+		}
+		.a_4new_items,.a_9new_items{
+			
+			display: flex;
+			flex-direction: row;
+			overflow-x:scroll;
+			padding-left: 60px;
+			padding-right: 60px;
+			
+			
+            }
+		.item{
+			width: 294px;
+			height: 359px;
+			margin: 12px;
+			line-height: normal;
+		}
+		.itemimg{
+/*			放圖片的框 灰色底及範圍*/
+			background-color: #EFEFEF;
+			width: 294px;
+			height: 294px;
+			margin-bottom: 5px;
+			
+		}
+		
+		.itemimg:hover >img{
+			transform: scale(1.1) translate(0px,20px);
+			transition: all 0.1s ease-out;
+			
+		}
+		
+
+/*		--------區塊五----*/
+		#a_56office{
+			width: 1366px;
+			margin: 0 auto;
+			line-height: normal;
+			
+		}
+		.a_5,.a_6{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding: 20px 60px;
+			
+		}
+		
+		
+		
+		
+/*----------------區塊七-------*/
+	
+		.a07{
+			width: 1366px;
+			height: 560px;
+			margin: auto;
+			background-image: url(img/06AdobeStock_295995814.png);
+			position: relative;
+			
+		}
+		.a07 h1{
+			position: absolute;
+			right: 40px;
+			bottom: 0px;
+			color:gray;
+			font-weight: bold;
+			
+				
+		}
+		
+		.p1,.p2,.p3{
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-radius:20px;
+		    background-color:rebeccapurple;
+			border: 3px solid rgba(255,255,255,1.00);
+			transform: scale(1,1);
+			opacity: 1;
+			transition: all 0.1s ease-out;
+		}
+		.p1{
+			top:300px;
+			left: 300px;
+			
+			
+		}
+		.p2{
+			top:300px;
+			left: 700px;
+		}
+		.p3{
+			top:300px;
+			left: 1100px;
+		}
+		.p1:hover,.p2:hover,.p3:hover{
+			transform:scale(1.5,1.5);
+			opacity: 0.5;
+			cursor: help; 
+	}
+/*
+		
+		------------區塊八--------
+*/
+		.a08{
+			width: 1366px;
+			margin: 30 auto;
+		}
+		.a08_flex{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		.a08_img{
+	width: 400px;
+	height: 440px;
+	margin: 0 10px;
+	
+
+		}
+		.a08_img img{
+			width: 400px;
+			height: 400px;
+			opacity: 0.5;
+		}
+		.a08_img img:hover{
+	    opacity: 1.1;
+		box-shadow: 0px 2px 5px 0px(0,0,0,0.6)
+	
+		}
+		
+		
+		
+		
+		
+/*		--------區塊10---------*/
+		.a10{
+			width: 1366px;
+			margin: auto;
+		text-align: center;
+			
+		}
+		.a10 img{
+			margin: 100px,0px;
+		}
+/*		--------logo---------*/
+		.logo{
+			position:fixed;
+			right: 0;
+			bottom: 0;
+		
+		}
+		.ao2-nav a{
+			color: 333;
+		}
+		
+		
+		
+	</style>
+</head>
+
+<body>
+
+	<div id="all">
+		<!--	01 ----------->
+		<div class="a01_nav">
+			<img src="img/01_1_Logo-Text.png" width="149" height="32" alt=""/>
+			
+			<div style="margin-top: 5px " >
+				<a href="">
+					<img class="logoicon" src="img/01_2_Search.png" width="24" height="24" alt=""/></a>
+				<a href="#">
+					<img class="logoicon" src="img/01_3_Log-in.png" width="24" height="24" alt=""/></a>
+				<a href="#">
+					<img class="logoicon" src="img/01_04_Bag (Added).png" width="24" height="24" alt=""/></a>
+			</div>
+		  
+		</div>
+		
+		<!--	02 ---------------->
+		<div class="a02_nav">
+			<a href="page2.html" style="display: inline-block;text-decoration: none;"><div class="a02_nav-item"><img  src="img/02_04_icon-Chair.png" alt="" class="img-a02"><p>Chairs</p></div></a>
+			<a href="page2.html" style="display: inline-block;text-decoration: none;"><div class="a02_nav-item"><img src="img/02_2_icon-box.png" alt="" class="img-a02"><p>new ln</p></div></a>
+			<a href="page3.html" style="display: inline-block;text-decoration: none;"><div class="a02_nav-item"><img src="img/02_03_icon-Sofa.png" alt="" class="img-a02"><p>Office</p></div></a>
+			
+			<a href="page2.html" style="display: inline-block;text-decoration: none;"><div class="a02_nav-item"><img src="img/02_05_icon-Tables.png" alt="" class="img-a02"><p>Tables</p></div></a>
+			<a href="page2.html" style="display: inline-block;text-decoration: none;"><div class="a02_nav-item"><img src="img/02_06_icon-Light.png" alt="" class="img-a02"><p>Lighting</p></div></a>
+		</div>
+					
+		<!--	03 ---------------->
+	    <div class="a03_hero ">
+				<div class="a03_hero1366">
+				<div class="a03-imgbox" style="background-image:url(img/03_01_Image-Product.png);background-position: right 0px bottom -20px;background-repeat: no-repeat;">
+					<p>Office Chair<br>form</p>
+					<h3>$50</h3>
+					</div>
+				<div class="a03_hero_textbox" >
+					<h3>2 great furniture on sales! </h3>
+					<p>Deal will closes in 2 days </p></div>
+				<div class="a03-imgbox1" style="background-image:url( img/03_02_Image-Product.png);background-position: right 0px bottom -20px;background-repeat: no-repeat;">
+					<p>Sofa &<br>Sectionals<br>fromrform</p>
+					<h3>$50</h3>
+		</div></div></div>
+		<!--	04 ---------------->
+			<div class="a_4new">
+        <!--	標題與按鈕-->
+				<div class="a_4new_titleItems">
+				    <h3 id="text">New In</h3>
+					<img src="img/arrows@2x.png" style="width: 96px;height: 40px">
+				</div>
+	    <!--	商品水平清單-->
+				<div class="a_4new_items">
+					<!--	子商品-->
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_05_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_06_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_07_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg">	<img src="img/04_08_IImage-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg"><img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg">	<img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>	
+			</div>
+						
+	</div>
+<!--	----0506----------->
+			<div  id="a_56office">
+				<div class="a_5">
+			    <div class="text5" style="width: 400px;text-align: left;line-height: 1.6em;">
+				 <h2>Home Office</h2>
+				 <p style="margin: 1.3em;">It might be work, but it doesn’t have to feel like it. All it takes is ergonomic yet comfortable and stylish home office furniture to keep things organised, and the right lighting for the job.</p>
+					<a href="#"><p><u>Shop all</u></p></a>
+					</div>
+				
+				<div class="img5" >
+			   <img  style="width: 824px;height: 480px;"  src="img/05_01_Container-image.png" width="824" height="480" alt=""/>
+				</div>
+				</div>
+				
+				
+			<div class="a_6">
+				
+				<div class="img6">
+					<img style="width: 824px;height: 480px;" src="img/05_02_Container-image.png" width="824" height="480" alt=""/></div>
+				<div id="text6" style="width: 400px;text-align: left;line-height: 1.6em;">
+				<h2>Bedroom</h2>
+				<p>Everything you need for a bedroom retreat. Clever storage keeps you clutter-free, while bedroom lighting and curated bedding sets the mood.</p>
+					<a href="#"><p><u>Shop all</u></p></a>
+				</div>
+				</div></div>
+<!--				-------7-------->
+				<div  class="a07" >
+					<h1>123</h1>
+					<div class="a07_3img">
+					  <div class="p1"></div>
+					  <div class="p2"></div>
+					  <div class="p3"></div>
+			        </div>
+					</div>
+<!--					-------8------->
+					<div class="a08">
+						<h1 style="margin: 20px;">information</h1>
+					<div class="a08_flex">
+						<div class="a08_img">
+							<img src="img/08_01Container-image.png"><h2>Living Room</h2>
+						</div>
+						<div class="a08_img">
+							<img src="img/08_02Container-image.png"><h2>Dining Room</h2>
+						</div>
+						<div class="a08_img">
+							<img src="img/08_03Container-image.png"><h2>Bathroom</h2></div>
+						
+						
+						</div>
+					
+					</div>
+<!--		-----------09-------------->
+				
+<div class="a_9new">
+        <!--	標題與按鈕-->
+				<div class="a_9new_titleItems">
+				    <div><h3>New In</h3></div>
+					<div>
+						<img src="img/arrows.png" width="96" height="40" alt=""/>
+					</div>
+				</div>
+	    <!--	商品水平清單-->
+				<div class="a_9new_items">
+					<!--	子商品-->
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_05_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_06_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg" >	<img src="img/04_07_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg">	<img src="img/04_08_IImage-Product.png" width="240" height="240" alt=""/></div>
+					<p>商品名稱</p>
+					<p>$1500</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg"><img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>AAAAA</p>
+					<p>$1300</p>
+					</div>
+					
+					<div class="item">
+					<div class="itemimg">	<img src="img/04_04_Image-Product.png" width="240" height="240" alt=""/></div>
+					<p>BBBBB</p>
+					<p>$1600</p>
+					</div>
+				</div>
+	
+						
+	</div>
+		<div class="a10" style="width: 1366px">
+	<a href="#all"><img src="img/icon-arrow.png"></a></div>
+		
+		<div class="logo">
+		<a href="#all"><img src="img/00Back to top (Hover State).png"></a></div>
+	</div>
+</body>
+</html>
